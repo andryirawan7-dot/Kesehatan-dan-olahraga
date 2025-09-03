@@ -49,3 +49,97 @@
   <script src="app.js"></script>
 </body>
 </html>
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: #f6f8fc;
+  display: flex;
+}
+.sidebar {
+  background: #2e8b57;
+  color: #fff;
+  width: 220px;
+  min-height: 100vh;
+  padding: 24px 0;
+  position: fixed;
+}
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar ul li {
+  margin: 16px 0;
+}
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+main {
+  margin-left: 240px;
+  padding: 32px;
+  flex: 1;
+}
+header h1 {
+  color: #2e8b57;
+  margin-bottom: 24px;
+}
+section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, .07);
+}
+.stats {
+  display: flex;
+  gap: 32px;
+  font-size: 1.2em;
+}
+textarea {
+  width: 100%;
+  height: 80px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  resize: vertical;
+}
+button {
+  background: #2e8b57;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+button:hover {
+  background: #246b43;
+}
+#notesList, #scheduleList {
+  margin-top: 12px;
+}
+#tipBox {
+  background: #e0f8ea;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 1.1em;
+  color: #246b43;
+}
+@media (max-width: 700px) {
+  .sidebar {
+    position: static;
+    width: 100%;
+    min-height: auto;
+    padding: 12px 0;
+  }
+  main {
+    margin-left: 0;
+    padding: 8px;
+  }
+}
